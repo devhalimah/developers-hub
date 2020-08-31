@@ -1,0 +1,63 @@
+                  <!--DEVELOPERS HUB LANDING PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="container">
+  <section class="section-1">
+  <h1>Learn to code by watching others</h1>
+  <p class="sub-title font-weight-bold">
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+  </p>
+  </section>
+
+ <section class="section-2">
+  <h4 class="bg-blue">
+  <span class="font-weight-bold">Try it free 7 days</span> then $20/mo. thereafter
+  </h4>
+  <form method="post" onsubmit="return validate()" name="signupform" autocomplete="off">
+    <input type="text" name="firstname" placeholder="First Name" value="" title="Enter your First Name">
+	<div class="error font-weight-bolder" id="firstnameErr"></div>
+	
+    <input type="text" name="lastname" placeholder="Last Name" value="" title="Enter your Last Name">
+	<div class="error font-weight-bolder" id="lastnameErr"></div>
+	
+    <input type="text" name="email" placeholder="Email Address" value="" title="Enter your E-mail Address">
+	<div class="error font-weight-bolder" id="emailErr"></div>
+	
+	<input type="password" name="password" placeholder="Password" value="" title="Create a Strong Password">
+	<div class="error font-weight-bolder" id="passwordErr"></div>
+	
+    <button type="submit" id="submit" class="bg-green font-weight-bolder">
+    Claim your free trial
+    </button>  
+
+  <p class="bottom-text">By clicking the button, you are agreeing to our <a href="#" class="text-red font-weight-bolder">Terms and Services</a></p>
+  </form>
+  </section>
+</div> <!-- END OF CONTAINER -->
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+      Coded by <a href="https://www.github.com/devhalimah" target="_blank">Abdul-Azeez Halimah Olaolohun.</a>
+    </p>
+  </footer>
+  
+  <!-- EXTERNAL JAVASCRIPT -->
+  <script src="./script/index.js"></script>
+</body>
+</html>
