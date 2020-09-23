@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
 	font-size: 16px;
@@ -45,8 +51,8 @@ h1{
 form{
     background-color: #fff;
 	border-radius: 5px;
-	padding: 20px;
 	padding-top: 30px;
+    padding-bottom: 20px;
 	box-shadow: 0 5px rgb(0,0,0,0.1);
 }
 form input[type='text'],input[type='password']{
