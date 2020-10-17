@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-*, 
-*::before, 
-*::after {
-	box-sizing: border-box;
-}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -30,11 +24,6 @@ section {
 .section-1 .sub-title{
   color: rgb(255,255,255,0.8);
   line-height: 1.5;
-}
-
-.section-2 {
-	width: 90%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -64,8 +53,8 @@ h1 {
 form {
   background-color: #fff;
   border-radius: 5px;
+  padding: 20px;
   padding-top: 30px;
-  padding-bottom: 20px;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,7 +94,7 @@ form input[type='text']:focus, input[type='password']:focus{
   letter-spacing: 1.5px;
   border: none;
   outline: none;
-  width: 80%;
+  width: 90%;
 }
 
 .bg-green:active {
@@ -120,8 +109,6 @@ form input[type='text']:focus, input[type='password']:focus{
 .bottom-text {
   color: #b9b6d3;
   font-size: 12px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .bottom-text .text-red {
@@ -129,56 +116,42 @@ form input[type='text']:focus, input[type='password']:focus{
   cursor: pointer;
 }
 
-.attribution {
-  font-size: 11px;
-  color: #fff;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 /* MEDIA QUERIES */
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 600px) {
   body {
     background-image: url(../images/bg-intro-desktop.png);
+	padding: 20px 80px 20px 0px;
   }
 
   .container {
     flex-direction: row;
-	padding-right: 100px;
-	padding-left: 100px;
+	align-items: center;
   }
 
   section {
-    margin-top: 5%;
-    padding-bottom: 20px;
+    margin-top: 50px;
+    padding: 0px 0px 20px 0px;
   }
 
   .section-1 {
     color: #fff;
-    padding-top: 135px;
+    padding-left: 70px;
+	padding-right: 0px;
     text-align: left;
     line-height: 1.4;
-    width: 60%;
+    width: 50%;
   }
   
-  .section-1 .sub-title{
-	max-width: 450px;
-  }
-  
-  .section-2 {
-	width: 60%;
-	margin-top: 5%;
+  .section-2{
+	width: 50%;
+	padding-left: 10px;
   }
   
   h1 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1;
   }
-  .attribution {
-	display: none;
+  p {
+	max-width: 500px;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
